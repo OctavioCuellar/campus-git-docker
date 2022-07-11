@@ -23,12 +23,25 @@ Agregamos el repositorio de manera remota
 
     git remote add origin https://github.com/OctavioCuellar/campus-git-docker.git
 
-Hacemos el psh a la rama deseada
+Hacemos el push a la rama deseada
 
     git push -u origin main
 
 ----------------------------
 2. Docker Hello World!
 
+Para bajar la imagen oficial de docker se utiliza el siguiente comando:
+    
+    docker pull hello-world
 
+Para correr la imagen se utiliza:
+
+    docker run hello-world
+
+Al correr la imagen nos aparece el siguiente mensaje en la terminal:
+
+    Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+----------------------------
 
