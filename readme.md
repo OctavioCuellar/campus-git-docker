@@ -56,11 +56,14 @@ Ahora para ejecutar se utiliza el siguiente comando cuidando de los parámetros:
 
 Donde:
 -e Son los parámetros de configuración
+
 -p Son los puertos que vamos a utilizar
+
 -v Define los directorios para guardar los datos de forma persistente
+
 -d Manda el proceso a background en vez de en primer plano en la terminal
 
-Comprobamos que los datos del contenedor sean persistentes, para eso hice la base de datos llamada <PruebaChida>.
+Comprobamos que los datos del contenedor sean persistentes, para eso hice la base de datos llamada "PruebaChida".
 
 ----------------------------
 Se suben todos los cambios con los siguientes comandos:
