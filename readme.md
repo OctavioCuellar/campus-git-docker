@@ -51,6 +51,7 @@ Primero debemos bajar la imagen de SQL Server con el comando siguiente:
     docker pull mcr.microsoft.com/mssql/server:2019-latest
 
 Ahora para ejecutar se utiliza el siguiente comando cuidando de los parámetros:
+    
     docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=P4ssw0rd!' -p 1433:1433 -v ${pwd}/data:/var/opt/mssql/data -v ${pwd}/log:/var/opt/mssql/log -v ${pwd}/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2019-latest
 
 Donde:
@@ -62,4 +63,11 @@ Donde:
 Comprobamos que los datos del contenedor sean persistentes, para eso hice la base de datos llamada <PruebaChida>.
 
 ----------------------------
+Se suben todos los cambios con los siguientes comandos:
+
+    git add .
+
+    git commit -m "Subiendo el ultimo cambio a la practica"
+
+    git push -u origin main
 
